@@ -1,0 +1,17 @@
+{
+	"cSpell.words": [
+		"e621",
+		"dtext"
+	],
+	"editor.tokenColorCustomizations": {
+		"[Default Dark+]": {
+			"comments": {},
+			"keywords": {},
+			"strings": {},
+			"numbers": {},
+			"functions": {},
+			"types": {},
+			"variables": {},
+		}
+	}
+}
