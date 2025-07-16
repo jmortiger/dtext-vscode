@@ -125,7 +125,30 @@
 		},
 		"meta": {
 			"patterns": [
-				{ "include": "#meta-tag" },
+				{
+					"name": "meta.tag",
+					"contentName": "meta.tag.body",
+					"begin": "(?<!\\[)((\\[)([a-zA-Z]+)([^\\]]*)(\\]))",
+					"beginCaptures": {
+						"1": { "name": "entity.name.tag.start" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
+						"3": { "name": "entity.name.tag.name" },
+						"4": { "name": "" },
+						"5": { "name": "punctuation.definition.tag.end.dtext" }
+					},
+					"end": "(?<!\\[)((\\[/)(\\3)([^\\]]*)(\\]))",
+					"endCaptures": {
+						"1": { "name": "entity.name.tag.end" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
+						"3": { "name": "entity.name.tag.name" },
+						"4": { "name": "" },
+						"5": { "name": "punctuation.definition.tag.end.dtext" }
+					},
+					"patterns": [
+						{ "include": "#markup" },
+						{ "include": "#meta" }
+					]
+				},
 				{
 					"name": "meta.link.reference.dtext",
 					"match": "((\\[)(\\#[- a-zA-Z]+)(\\]))",
@@ -146,31 +169,20 @@
 						"4": { "name": "string.other.link.title.markdown" },
 						"5": { "name": "punctuation.definition.link.title.end.dtext" }
 					}
+				},
+				{
+					"name": "meta.link.inline.dtext",
+					"match": "((\")([^\"]*)(\"))(:)(\\[[^\\]]*\\]|\\S*)",
+					"captures": {
+						"1": { "name": "string.other.link.title.markdown" },
+						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
+						"3": { "name": "" },
+						"4": { "name": "punctuation.definition.link.title.end.dtext" },
+						"5": { "name": "entity.name.link.start" },
+						"6": { "name": "" },
+						"7": { "name": "markup.underline.link.markdown" }
+					}
 				}
-			]
-		},
-		"meta-tag": {
-			"name": "meta.tag",
-			"contentName": "meta.tag.body",
-			"begin": "(?<!\\[)((\\[)([a-zA-Z]+)([^\\]]*)(\\]))",
-			"beginCaptures": {
-				"1": { "name": "entity.name.tag.start" },
-				"2": { "name": "punctuation.definition.tag.begin.dtext" },
-				"3": { "name": "entity.name.tag.name" },
-				"4": { "name": "" },
-				"5": { "name": "punctuation.definition.tag.end.dtext" }
-			},
-			"end": "(?<!\\[)((\\[/)(\\3)([^\\]]*)(\\]))",
-			"endCaptures": {
-				"1": { "name": "entity.name.tag.end" },
-				"2": { "name": "punctuation.definition.tag.begin.dtext" },
-				"3": { "name": "entity.name.tag.name" },
-				"4": { "name": "" },
-				"5": { "name": "punctuation.definition.tag.end.dtext" }
-			},
-			"patterns": [
-				{ "include": "#markup" },
-				{ "include": "#meta-tag" }
 			]
 		}
 	},
