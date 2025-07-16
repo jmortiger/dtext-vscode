@@ -37,8 +37,8 @@ foreground	#808080
 background	#1E1E1E
 contrast ratio	4.22
 textmate scopes	punctuation.definition.tag.begin.html
-meta.tag.other.unrecognized.html.derivative
-text.html.derivative
+				meta.tag.other.unrecognized.html.derivative
+				text.html.derivative
 foreground	punctuation.definition.tag
 { "foreground": "#808080" }
 
@@ -49,8 +49,8 @@ foreground	#569CD6
 background	#1E1E1E
 contrast ratio	5.65
 textmate scopes	entity.name.tag.html
-meta.tag.other.unrecognized.html.derivative
-text.html.derivative
+				meta.tag.other.unrecognized.html.derivative
+				text.html.derivative
 foreground	entity.name.tag
 { "foreground": "#569CD6" }
 
@@ -61,7 +61,7 @@ foreground	#D4D4D4
 background	#1E1E1E
 contrast ratio	11.24
 textmate scopes	meta.tag.other.unrecognized.html.derivative
-text.html.derivative
+				text.html.derivative
 foreground	No theme selector
 
 id2 chars
@@ -110,10 +110,10 @@ foreground	#CE9178
 background	#1E1E1E
 contrast ratio	6.31
 textmate scopes	punctuation.definition.string.end.html
-string.quoted.double.html
-meta.attribute.id.html
-meta.tag.other.unrecognized.html.derivative
-text.html.derivative
+				string.quoted.double.html
+				meta.attribute.id.html
+				meta.tag.other.unrecognized.html.derivative
+				text.html.derivative
 foreground	string
 { "foreground": "#CE9178" }
 
@@ -124,8 +124,8 @@ foreground	#808080
 background	#1E1E1E
 contrast ratio	4.22
 textmate scopes	punctuation.definition.tag.end.html
-meta.tag.other.unrecognized.html.derivative
-text.html.derivative
+				meta.tag.other.unrecognized.html.derivative
+				text.html.derivative
 foreground	punctuation.definition.tag
 { "foreground": "#808080" }
 
@@ -184,9 +184,9 @@ background	#1E1E1E
 contrast ratio	5.65
 font style	bold
 textmate scopes	punctuation.definition.heading.markdown
-heading.2.markdown
-markup.heading.markdown
-text.html.markdown
+				heading.2.markdown
+				markup.heading.markdown
+				text.html.markdown
 foreground	markup.heading
 { "foreground": "#569CD6", "fontStyle": "bold" }
 
@@ -198,8 +198,8 @@ background	#1E1E1E
 contrast ratio	5.65
 font style	bold
 textmate scopes	heading.2.markdown
-markup.heading.markdown
-text.html.markdown
+				markup.heading.markdown
+				text.html.markdown
 foreground	markup.heading
 { "foreground": "#569CD6", "fontStyle": "bold" }
 
@@ -211,9 +211,9 @@ background	#1E1E1E
 contrast ratio	5.65
 font style	bold
 textmate scopes	entity.name.section.markdown
-heading.2.markdown
-markup.heading.markdown
-text.html.markdown
+				heading.2.markdown
+				markup.heading.markdown
+				text.html.markdown
 foreground	markup.heading
 { "foreground": "#569CD6", "fontStyle": "bold" }
 
@@ -226,7 +226,7 @@ foreground	#D4D4D4
 background	#1E1E1E
 contrast ratio	11.24
 textmate scopes	markup.list.unnumbered.markdown
-text.html.markdown
+				text.html.markdown
 foreground	No theme selector
 
 *1 char
@@ -236,8 +236,8 @@ foreground	#6796E6
 background	#1E1E1E
 contrast ratio	5.62
 textmate scopes	punctuation.definition.list.begin.markdown
-markup.list.unnumbered.markdown
-text.html.markdown
+				markup.list.unnumbered.markdown
+				text.html.markdown
 foreground	punctuation.definition.list.begin.markdown
 { "foreground": "#6796E6" }
 
@@ -248,7 +248,7 @@ foreground	#D4D4D4
 background	#1E1E1E
 contrast ratio	11.24
 textmate scopes	markup.list.unnumbered.markdown
-text.html.markdown
+				text.html.markdown
 foreground	No theme selector
 
 ~~2 chars
@@ -259,10 +259,10 @@ background	#1E1E1E
 contrast ratio	11.24
 font style	strikethrough
 textmate scopes	punctuation.definition.strikethrough.markdown
-markup.strikethrough.markdown
-meta.paragraph.markdown
-markup.list.unnumbered.markdown
-text.html.markdown
+				markup.strikethrough.markdown
+				meta.paragraph.markdown
+				markup.list.unnumbered.markdown
+				text.html.markdown
 foreground	markup.strikethrough
 { "fontStyle": "strikethrough" }
 
@@ -274,9 +274,9 @@ background	#1E1E1E
 contrast ratio	11.24
 font style	strikethrough
 textmate scopes	markup.strikethrough.markdown
-meta.paragraph.markdown
-markup.list.unnumbered.markdown
-text.html.markdown
+				meta.paragraph.markdown
+				markup.list.unnumbered.markdown
+				text.html.markdown
 foreground	markup.strikethrough
 { "fontStyle": "strikethrough" }
 
@@ -288,11 +288,11 @@ background	#1E1E1E
 contrast ratio	11.24
 font style	italic
 textmate scopes	punctuation.definition.italic.markdown
-markup.italic.markdown
-markup.strikethrough.markdown
-meta.paragraph.markdown
-markup.list.unnumbered.markdown
-text.html.markdown
+				markup.italic.markdown
+				markup.strikethrough.markdown
+				meta.paragraph.markdown
+				markup.list.unnumbered.markdown
+				text.html.markdown
 foreground	markup.italic
 { "fontStyle": "italic" }
 
@@ -304,10 +304,10 @@ background	#1E1E1E
 contrast ratio	11.24
 font style	italic
 textmate scopes	markup.italic.markdown
-markup.strikethrough.markdown
-meta.paragraph.markdown
-markup.list.unnumbered.markdown
-text.html.markdown
+				markup.strikethrough.markdown
+				meta.paragraph.markdown
+				markup.list.unnumbered.markdown
+				text.html.markdown
 foreground	markup.italic
 { "fontStyle": "italic" }
 
@@ -319,11 +319,11 @@ background	#1E1E1E
 contrast ratio	11.24
 font style	italic
 textmate scopes	punctuation.definition.italic.markdown
-markup.italic.markdown
-markup.strikethrough.markdown
-meta.paragraph.markdown
-markup.list.unnumbered.markdown
-text.html.markdown
+				markup.italic.markdown
+				markup.strikethrough.markdown
+				meta.paragraph.markdown
+				markup.list.unnumbered.markdown
+				text.html.markdown
 foreground	markup.italic
 { "fontStyle": "italic" }
 
@@ -335,9 +335,9 @@ background	#1E1E1E
 contrast ratio	11.24
 font style	strikethrough
 textmate scopes	markup.strikethrough.markdown
-meta.paragraph.markdown
-markup.list.unnumbered.markdown
-text.html.markdown
+				meta.paragraph.markdown
+				markup.list.unnumbered.markdown
+				text.html.markdown
 foreground	markup.strikethrough
 { "fontStyle": "strikethrough" }
 
@@ -349,10 +349,10 @@ background	#1E1E1E
 contrast ratio	11.24
 font style	strikethrough
 textmate scopes	punctuation.definition.strikethrough.markdown
-markup.strikethrough.markdown
-meta.paragraph.markdown
-markup.list.unnumbered.markdown
-text.html.markdown
+				markup.strikethrough.markdown
+				meta.paragraph.markdown
+				markup.list.unnumbered.markdown
+				text.html.markdown
 foreground	markup.strikethrough
 { "fontStyle": "strikethrough" }
 
@@ -363,6 +363,164 @@ foreground	#D4D4D4
 background	#1E1E1E
 contrast ratio	11.24
 textmate scopes	meta.paragraph.markdown
-markup.list.unnumbered.markdown
-text.html.markdown
+				markup.list.unnumbered.markdown
+				text.html.markdown
 foreground	No theme selector
+
+[#asdf]
+[Text](#asdf)
+
+[1 char
+language	markdown
+standard token type	Other
+foreground	#D4D4D4
+background	#1E1E1E
+contrast ratio	11.24
+textmate scopes	punctuation.definition.link.title.begin.markdown
+				meta.link.reference.markdown
+				meta.paragraph.markdown
+				text.html.markdown
+foreground	No theme selector
+
+#asdf5 chars
+language	markdown
+standard token type	String
+foreground	#CE9178
+background	#1E1E1E
+contrast ratio	6.31
+textmate scopes	string.other.link.title.markdown
+				meta.link.reference.markdown
+				meta.paragraph.markdown
+				text.html.markdown
+foreground	string
+{ "foreground": "#CE9178" }
+
+]1 char
+language	markdown
+standard token type	Other
+foreground	#D4D4D4
+background	#1E1E1E
+contrast ratio	11.24
+textmate scopes	punctuation.definition.link.title.end.markdown
+				meta.link.reference.markdown
+				meta.paragraph.markdown
+				text.html.markdown
+foreground	No theme selector
+
+[1 char
+language	markdown
+standard token type	Other
+foreground	#D4D4D4
+background	#1E1E1E
+contrast ratio	11.24
+textmate scopes	punctuation.definition.link.title.begin.markdown
+				meta.link.inline.markdown
+				meta.paragraph.markdown
+				text.html.markdown
+foreground	No theme selector
+
+Text4 chars
+language	markdown
+standard token type	String
+foreground	#CE9178
+background	#1E1E1E
+contrast ratio	6.31
+textmate scopes	string.other.link.title.markdown
+				meta.link.inline.markdown
+				meta.paragraph.markdown
+				text.html.markdown
+foreground	string
+{ "foreground": "#CE9178" }
+
+]1 char
+language	markdown
+standard token type	Other
+foreground	#D4D4D4
+background	#1E1E1E
+contrast ratio	11.24
+textmate scopes	punctuation.definition.link.title.end.markdown
+				meta.link.inline.markdown
+				meta.paragraph.markdown
+				text.html.markdown
+foreground	No theme selector
+
+(1 char
+language	markdown
+standard token type	Other
+foreground	#D4D4D4
+background	#1E1E1E
+contrast ratio	11.24
+textmate scopes	punctuation.definition.metadata.markdown
+				meta.link.inline.markdown
+				meta.paragraph.markdown
+				text.html.markdown
+foreground	No theme selector
+
+#asdf5 chars
+language	markdown
+standard token type	Other
+foreground	#D4D4D4
+background	#1E1E1E
+contrast ratio	11.24
+font style	underline
+textmate scopes	markup.underline.link.markdown
+				meta.link.inline.markdown
+				meta.paragraph.markdown
+				text.html.markdown
+foreground	markup.underline
+{ "fontStyle": "underline" }
+
+)1 char
+language	markdown
+standard token type	Other
+foreground	#D4D4D4
+background	#1E1E1E
+contrast ratio	11.24
+textmate scopes	punctuation.definition.metadata.markdown
+				meta.link.inline.markdown
+				meta.paragraph.markdown
+				text.html.markdown
+foreground	No theme selector
+
+**text**
+
+**2 chars
+language	markdown
+standard token type	Other
+foreground	#569CD6
+background	#1E1E1E
+contrast ratio	5.65
+font style	bold
+textmate scopes	punctuation.definition.bold.markdown
+				markup.bold.markdown
+				meta.paragraph.markdown
+				text.html.markdown
+foreground	markup.bold
+{ "foreground": "#569CD6", "fontStyle": "bold" }
+
+text4 chars
+language	markdown
+standard token type	Other
+foreground	#569CD6
+background	#1E1E1E
+contrast ratio	5.65
+font style	bold
+textmate scopes	markup.bold.markdown
+				meta.paragraph.markdown
+				text.html.markdown
+foreground	markup.bold
+{ "foreground": "#569CD6", "fontStyle": "bold" }
+
+**2 chars
+language	markdown
+standard token type	Other
+foreground	#569CD6
+background	#1E1E1E
+contrast ratio	5.65
+font style	bold
+textmate scopes	punctuation.definition.bold.markdown
+				markup.bold.markdown
+				meta.paragraph.markdown
+				text.html.markdown
+foreground	markup.bold
+{ "foreground": "#569CD6", "fontStyle": "bold" }
