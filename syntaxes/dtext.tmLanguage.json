@@ -152,7 +152,7 @@
 		"meta-tag": {
 			"name": "meta.tag",
 			"contentName": "meta.tag.body",
-			"begin": "((\\[)([a-zA-Z]+)([^\\]]*)(\\]))",
+			"begin": "(?<!\\[)((\\[)([a-zA-Z]+)([^\\]]*)(\\]))",
 			"beginCaptures": {
 				"1": { "name": "entity.name.tag.start" },
 				"2": { "name": "punctuation.definition.tag.begin.dtext" },
@@ -160,7 +160,7 @@
 				"4": { "name": "" },
 				"5": { "name": "punctuation.definition.tag.end.dtext" }
 			},
-			"end": "((\\[/)(\\3)([^\\]]*)(\\]))",
+			"end": "(?<!\\[)((\\[/)(\\3)([^\\]]*)(\\]))",
 			"endCaptures": {
 				"1": { "name": "entity.name.tag.end" },
 				"2": { "name": "punctuation.definition.tag.begin.dtext" },
