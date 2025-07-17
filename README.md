@@ -25,6 +25,7 @@ A language extension for e621's DText markup language.
 		- [x] Separator
 	- [x] Tag search
 	- [ ] Id-based
+		- [x] All (generic)
 		- [ ] Post
 		- [ ] Post changes
 		- [ ] Forum Topic

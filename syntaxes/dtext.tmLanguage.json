@@ -272,6 +272,17 @@
 						"3": { "name": "markup.underline.link.tag-search.dtext" },
 						"4": { "name": "punctuation.definition.link.title.end.dtext" }
 					}
+				},
+				{
+					"name": "markup.underline.link.id-search.dtext",
+					"match": "((post(?: changes)?|topic|comment|blip|pool|set|takedown|record|ticket|thumb) ((#)([0-9]+)))",
+					"captures": {
+						"1": { "name": "string.other.link.title.id-search.dtext" },
+						"2": { "name": "string.other.link.title.id-search.dtext" },
+						"3": { "name": "constant.numeric.id.dtext" },
+						"4": { "name": "punctuation.definition.attribute.id.dtext" },
+						"5": { "name": "meta.attribute.id.dtext" }
+					}
 				}
 			]
 		}
