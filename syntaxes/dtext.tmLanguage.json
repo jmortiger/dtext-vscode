@@ -2,10 +2,106 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "DText (e621)",
 	"patterns": [
+		{ "include": "#heading" },
 		{ "include": "#markup" },
 		{ "include": "#meta" }
 	],
 	"repository": {
+		"heading": {
+			"patterns": [
+				{
+					"contentName": "markup.heading.dtext",
+					"begin": "^(?=\\s*(h[1-6].)([^\\n]*)$)",
+					"end": "(?<=^\\s*\\1(\\2))$",
+					"patterns": [
+						{
+							"name": "heading.1.dtext",
+							"match": "(?<=^\\s*)(h1.)([^\\n]*$)",
+							"captures": {
+								"1" : { "name": "punctuation.definition.heading.dtext" },
+								"2" : {
+									"name": "entity.name.section.dtext",
+									"patterns": [
+										{ "include": "#markup" },
+										{ "include": "#meta" }
+									]
+								}
+							}
+						},
+						{
+							"name": "heading.2.dtext",
+							"match": "(?<=^\\s*)(h2.)([^\\n]*$)",
+							"captures": {
+								"1" : { "name": "punctuation.definition.heading.dtext" },
+								"2" : {
+									"name": "entity.name.section.dtext",
+									"patterns": [
+										{ "include": "#markup" },
+										{ "include": "#meta" }
+									]
+								}
+							}
+						},
+						{
+							"name": "heading.3.dtext",
+							"match": "(?<=^\\s*)(h3.)([^\\n]*$)",
+							"captures": {
+								"1" : { "name": "punctuation.definition.heading.dtext" },
+								"2" : {
+									"name": "entity.name.section.dtext",
+									"patterns": [
+										{ "include": "#markup" },
+										{ "include": "#meta" }
+									]
+								}
+							}
+						},
+						{
+							"name": "heading.4.dtext",
+							"match": "(?<=^\\s*)(h4.)([^\\n]*$)",
+							"captures": {
+								"1" : { "name": "punctuation.definition.heading.dtext" },
+								"2" : {
+									"name": "entity.name.section.dtext",
+									"patterns": [
+										{ "include": "#markup" },
+										{ "include": "#meta" }
+									]
+								}
+							}
+						},
+						{
+							"name": "heading.5.dtext",
+							"match": "(?<=^\\s*)(h5.)([^\\n]*$)",
+							"captures": {
+								"1" : { "name": "punctuation.definition.heading.dtext" },
+								"2" : {
+									"name": "entity.name.section.dtext",
+									"patterns": [
+										{ "include": "#markup" },
+										{ "include": "#meta" }
+									]
+								}
+							}
+						},
+						{
+							"name": "heading.6.dtext",
+							"match": "(?<=^\\s*)(h6.)([^\\n]*$)",
+							"captures": {
+								"1" : { "name": "punctuation.definition.heading.dtext" },
+								"2" : {
+									"name": "entity.name.section.dtext",
+									"patterns": [
+										{ "include": "#markup" },
+										{ "include": "#meta" }
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		},
 		"markup": {
 			"patterns": [
 				{
@@ -14,6 +110,25 @@
 					"captures": {
 						"1" : { "name": "punctuation.definition.raw.dtext" },
 						"2" : { "name": "punctuation.definition.raw.dtext" }
+					}
+				},
+				{
+					"name": "markup.heading.dtext",
+					"patterns": [
+						{
+							"name": "heading.1.dtext",
+							"match": "(?<=^\\s*)(h1.)([^\\n]*)",
+							"captures": {
+								"1" : { "name": "punctuation.definition.heading.dtext" },
+								"2" : { "name": "entity.name.section.dtext" }
+							}
+						}
+					],
+					"match": "(?<=^\\s*)(h([1-6]).)([^\\n]*)",
+					"captures": {
+						"1" : { "name": "punctuation.definition.heading.dtext" },
+						"2" : { "name": "heading..dtext" },
+						"3" : { "name": "punctuation.definition.heading.dtext" }
 					}
 				},
 				{

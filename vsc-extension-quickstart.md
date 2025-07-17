@@ -524,3 +524,46 @@ textmate scopes	punctuation.definition.bold.markdown
 				text.html.markdown
 foreground	markup.bold
 { "foreground": "#569CD6", "fontStyle": "bold" }
+
+### Sets
+
+###3 chars
+language	markdown
+standard token type	Other
+foreground	#569CD6
+background	#1E1E1E
+contrast ratio	5.65
+font style	bold
+textmate scopes	punctuation.definition.heading.markdown
+				heading.3.markdown
+				markup.heading.markdown
+				text.html.markdown
+foreground	markup.heading
+{ "foreground": "#569CD6", "fontStyle": "bold" }
+
+·1 char
+language	markdown
+standard token type	Other
+foreground	#569CD6
+background	#1E1E1E
+contrast ratio	5.65
+font style	bold
+textmate scopes	heading.3.markdown
+				markup.heading.markdown
+				text.html.markdown
+foreground	markup.heading
+{ "foreground": "#569CD6", "fontStyle": "bold" }
+
+Sets4 chars
+language	markdown
+standard token type	Other
+foreground	#569CD6
+background	#1E1E1E
+contrast ratio	5.65
+font style	bold
+textmate scopes	entity.name.section.markdown
+				heading.3.markdown
+				markup.heading.markdown
+				text.html.markdown
+foreground	markup.heading
+{ "foreground": "#569CD6", "fontStyle": "bold" }

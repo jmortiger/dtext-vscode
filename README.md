@@ -42,7 +42,7 @@ A language extension for e621's DText markup language.
 	- [x] Code Block
 		- [x] Generalized detection
 		- [x] Specific detection
-	- [ ] Header
+	- [x] Header
 	- [ ] List
 	- [x] Section
 		- [x] Generalized detection
