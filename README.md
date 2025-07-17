@@ -38,7 +38,9 @@ A language extension for e621's DText markup language.
 		- [ ] Ticket
 		- [ ] Thumbnails
 - [ ] Block Formatting
-	- [ ] Block Quote
+	- [x] Block Quote
+		- [x] Generalized detection
+		- [x] Specific detection
 	- [x] Code Block
 		- [x] Generalized detection
 		- [x] Specific detection
@@ -49,7 +51,7 @@ A language extension for e621's DText markup language.
 		- [x] Specific detection
 		- [x] Expanded
 		- [x] Named
-	- [ ] LTable
+	- [x] LTable
 		- [x] Generalized detection
 		- [x] Specific detection
 		- [x] Separator
