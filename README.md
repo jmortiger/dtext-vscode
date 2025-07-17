@@ -1,3 +1,69 @@
 # dtext-vscode README
 
 A language extension for e621's DText markup language.
+
+## TODO
+- [x] Simple markup tags
+	- [x] Bold
+	- [x] Italics
+	- [x] Strike-through
+	- [x] Underline
+	- [x] Superscript
+	- [x] Subscript
+	- [x] Spoiler
+	- [x] Inline code
+	- [x] Color
+- [ ] Links
+	- [x] Anchors
+	- [ ] Naked
+	- [ ] Angle-bracketed
+	- [x] Named
+		- [x] Square-bracketed
+	- [x] Internal
+		- [x] Named
+		- [ ] Separator
+	- [x] Tag search
+	- [ ] Post
+	- [ ] Post changes
+	- [ ] Forum Topic
+	- [ ] Comment
+	- [ ] Blip
+	- [ ] Pool
+	- [ ] Set
+	- [ ] Takedown
+	- [ ] Record
+	- [ ] Ticket
+	- [ ] Thumbnails
+- [ ] Block Formatting
+	- [ ] Block Quote
+	- [ ] Code Block
+		- [x] Generalized detection
+		- [ ] Specific detection
+	- [ ] Header
+	- [ ] List
+	- [x] Section
+		- [x] Generalized detection
+		- [x] Specific detection
+		- [x] Expanded
+		- [x] Named
+	- [ ] LTable
+		- [x] Generalized detection
+		- [ ] Specific detection
+		- [ ] Separator
+	- [ ] Table
+		- [x] Generalized detection
+		- [ ] Specific detection
+		- [ ] tHead
+			- [x] Generalized detection
+			- [ ] Specific detection
+		- [ ] tBody
+			- [x] Generalized detection
+			- [ ] Specific detection
+		- [ ] tr
+			- [x] Generalized detection
+			- [ ] Specific detection
+			- [ ] Separ
+		- [ ] th
+			- [x] Generalized detection
+			- [ ] Specific detection
+		
