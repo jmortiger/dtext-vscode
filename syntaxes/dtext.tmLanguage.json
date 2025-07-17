@@ -263,6 +263,28 @@
 					]
 				},
 				{
+					"name": "meta.tag.structure.code.dtext",
+					"contentName": "markup.inline.raw.code.dtext",
+					"begin": "(?<!\\[)((\\[)(code)(\\]))",
+					"beginCaptures": {
+						"1": { "name": "meta.tag.structure.code.start.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
+						"3": { "name": "entity.name.tag.dtext" },
+						"4": { "name": "punctuation.definition.tag.end.dtext" }
+					},
+					"end": "(?<!\\[)((\\[/)(\\3)(\\]))",
+					"endCaptures": {
+						"1": { "name": "meta.tag.structure.code.end.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
+						"3": { "name": "entity.name.tag.dtext" },
+						"4": { "name": "punctuation.definition.tag.end.dtext" }
+					},
+					"patterns": [
+						{ "include": "#markup" },
+						{ "include": "#meta" }
+					]
+				},
+				{
 					"name": "meta.tag.other.unrecognized.dtext",
 					"begin": "(?<!\\[)((\\[)([a-zA-Z0-9]+)([^\\]]*)(\\]))",
 					"beginCaptures": {
@@ -274,7 +296,7 @@
 					},
 					"end": "(?<!\\[)((\\[/)(\\3)(\\]))",
 					"endCaptures": {
-						"1": { "name": "meta.tag.other.unrecognized.start.dtext" },
+						"1": { "name": "meta.tag.other.unrecognized.end.dtext" },
 						"2": { "name": "punctuation.definition.tag.begin.dtext" },
 						"3": { "name": "entity.name.tag.dtext" },
 						"4": { "name": "punctuation.definition.tag.end.dtext" }

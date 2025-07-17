@@ -39,9 +39,9 @@ A language extension for e621's DText markup language.
 		- [ ] Thumbnails
 - [ ] Block Formatting
 	- [ ] Block Quote
-	- [ ] Code Block
+	- [x] Code Block
 		- [x] Generalized detection
-		- [ ] Specific detection
+		- [x] Specific detection
 	- [ ] Header
 	- [ ] List
 	- [x] Section
