@@ -178,6 +178,64 @@
 		"meta": {
 			"patterns": [
 				{
+					"name": "meta.link.inline.tag-search.dtext",
+					"match": "((\\{\\{)([^}]+)(\\}\\}))",
+					"captures": {
+						"1": { "name": "string.other.link.title.dtext" },
+						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
+						"3": { "name": "markup.underline.link.tag-search.dtext" },
+						"4": { "name": "punctuation.definition.link.title.end.dtext" }
+					}
+				},
+				{
+					"name": "markup.underline.link.id-search.dtext",
+					"match": "((post(?: changes)?|topic|comment|blip|pool|set|takedown|record|ticket|thumb) ((#)([0-9]+)))",
+					"captures": {
+						"1": { "name": "string.other.link.title.id-search.dtext" },
+						"2": { "name": "string.other.link.title.id-search.dtext" },
+						"3": { "name": "constant.numeric.id.dtext" },
+						"4": { "name": "punctuation.definition.attribute.id.dtext" },
+						"5": { "name": "meta.attribute.id.dtext" }
+					}
+				},
+				{
+					"name": "meta.link.inline.dtext",
+					"match": "((\")([^\"]*)(\"))(:)(?:(\\[)([^\\]]*)(\\])|(\\S*))",
+					"captures": {
+						"1": { "name": "string.other.link.title.dtext" },
+						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
+						"3": { "name": "" },
+						"4": { "name": "punctuation.definition.link.title.end.dtext" },
+						"5": { "name": "punctuation.separator.link-title.dtext" },
+						"6": { "name": "punctuation.definition.metadata.begin.dtext" },
+						"7": { "name": "markup.underline.link.dtext" },
+						"8": { "name": "punctuation.definition.metadata.end.dtext" },
+						"9": { "name": "markup.underline.link.dtext" }
+					}
+				},
+				{
+					"name": "meta.link.anchor.dtext",
+					"match": "(?<!\\[)((\\[)(\\#[^\\]]+)(\\]))",
+					"captures": {
+						"1": { "name": "meta.link.reference.dtext" },
+						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
+						"3": { "name": "string.other.link.title.dtext" },
+						"4": { "name": "punctuation.definition.link.title.end.dtext" }
+					}
+				},
+				{
+					"name": "meta.link.inline.dtext",
+					"match": "((\\[\\[)([^\\]|]+)(?:(\\|)([^\\]]+))?(\\]))",
+					"captures": {
+						"1": { "name": "" },
+						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
+						"3": { "name": "markup.underline.link.dtext" },
+						"4": { "name": "punctuation.separator.link-title.dtext" },
+						"5": { "name": "string.other.link.title.dtext" },
+						"6": { "name": "punctuation.definition.link.title.end.dtext" }
+					}
+				},
+				{
 					"name": "meta.tag.structure.section.dtext",
 					"begin": "(?<!\\[)((\\[)(section)((,)(expanded))?((=)([^\\]]*))?(\\]))",
 					"beginCaptures": {
@@ -225,64 +283,6 @@
 						{ "include": "#markup" },
 						{ "include": "#meta" }
 					]
-				},
-				{
-					"name": "meta.link.anchor.dtext",
-					"match": "((\\[)(\\#[- a-zA-Z0-9]+)(\\]))",
-					"captures": {
-						"1": { "name": "meta.link.reference.dtext" },
-						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
-						"3": { "name": "string.other.link.title.dtext" },
-						"4": { "name": "punctuation.definition.link.title.end.dtext" }
-					}
-				},
-				{
-					"name": "meta.link.inline.dtext",
-					"match": "((\\[\\[)([^\\]|]+)(?:(\\|)([^\\]]+))?(\\]))",
-					"captures": {
-						"1": { "name": "" },
-						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
-						"3": { "name": "markup.underline.link.dtext" },
-						"4": { "name": "punctuation.separator.link-title.dtext" },
-						"5": { "name": "string.other.link.title.dtext" },
-						"6": { "name": "punctuation.definition.link.title.end.dtext" }
-					}
-				},
-				{
-					"name": "meta.link.inline.dtext",
-					"match": "((\")([^\"]*)(\"))(:)(?:(\\[)([^\\]]*)(\\])|(\\S*))",
-					"captures": {
-						"1": { "name": "string.other.link.title.dtext" },
-						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
-						"3": { "name": "" },
-						"4": { "name": "punctuation.definition.link.title.end.dtext" },
-						"5": { "name": "punctuation.separator.link-title.dtext" },
-						"6": { "name": "punctuation.definition.metadata.begin.dtext" },
-						"7": { "name": "markup.underline.link.dtext" },
-						"8": { "name": "punctuation.definition.metadata.end.dtext" },
-						"9": { "name": "markup.underline.link.dtext" }
-					}
-				},
-				{
-					"name": "meta.link.inline.tag-search.dtext",
-					"match": "((\\{\\{)([^}]+)(\\}\\}))",
-					"captures": {
-						"1": { "name": "string.other.link.title.dtext" },
-						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
-						"3": { "name": "markup.underline.link.tag-search.dtext" },
-						"4": { "name": "punctuation.definition.link.title.end.dtext" }
-					}
-				},
-				{
-					"name": "markup.underline.link.id-search.dtext",
-					"match": "((post(?: changes)?|topic|comment|blip|pool|set|takedown|record|ticket|thumb) ((#)([0-9]+)))",
-					"captures": {
-						"1": { "name": "string.other.link.title.id-search.dtext" },
-						"2": { "name": "string.other.link.title.id-search.dtext" },
-						"3": { "name": "constant.numeric.id.dtext" },
-						"4": { "name": "punctuation.definition.attribute.id.dtext" },
-						"5": { "name": "meta.attribute.id.dtext" }
-					}
 				}
 			]
 		}
