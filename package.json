@@ -3,7 +3,7 @@
   "displayName": "DText (e621)",
   "description": "Syntax highlighting for e621's DText.",
   "version": "0.0.1",
-  "publisher": "Justin Morris",
+  "publisher": "JustinMorris",
   "engines": {
     "vscode": "^1.99.0"
   },

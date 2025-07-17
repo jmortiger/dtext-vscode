@@ -2,6 +2,9 @@
 
 A language extension for e621's DText markup language.
 
+## Installation
+The releases contain the vsix package for that version. To build/package from source, follow [these instructions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension).
+
 ## TODO
 - [x] Simple markup tags
 	- [x] Bold
@@ -70,4 +73,3 @@ A language extension for e621's DText markup language.
 		- [ ] th
 			- [x] Generalized detection
 			- [ ] Specific detection
-		
