@@ -4,6 +4,10 @@
   "description": "Syntax highlighting for e621's DText.",
   "version": "0.0.1",
   "publisher": "JustinMorris",
+  "license": "GPL-3.0-only",
+  "author": {
+	"name": "Justin Morris"
+  },
   "engines": {
     "vscode": "^1.99.0"
   },
