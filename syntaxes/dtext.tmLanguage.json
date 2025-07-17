@@ -285,6 +285,31 @@
 					]
 				},
 				{
+					"name": "meta.tag.structure.ltable.dtext",
+					"begin": "(?<!\\[)((\\[)(ltable)(\\]))",
+					"beginCaptures": {
+						"1": { "name": "meta.tag.structure.ltable.start.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
+						"3": { "name": "entity.name.tag.dtext" },
+						"4": { "name": "punctuation.definition.tag.end.dtext" }
+					},
+					"end": "(?<!\\[)((\\[/)(\\3)(\\]))",
+					"endCaptures": {
+						"1": { "name": "meta.tag.structure.ltable.end.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
+						"3": { "name": "entity.name.tag.dtext" },
+						"4": { "name": "punctuation.definition.tag.end.dtext" }
+					},
+					"patterns": [
+						{ "include": "#markup" },
+						{ "include": "#meta" },
+						{ 
+							"name": "punctuation.separator.column.dtext",
+							"match": "(?<= )(\\|)(?= )"
+						}
+					]
+				},
+				{
 					"name": "meta.tag.other.unrecognized.dtext",
 					"begin": "(?<!\\[)((\\[)([a-zA-Z0-9]+)([^\\]]*)(\\]))",
 					"beginCaptures": {

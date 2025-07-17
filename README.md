@@ -51,8 +51,8 @@ A language extension for e621's DText markup language.
 		- [x] Named
 	- [ ] LTable
 		- [x] Generalized detection
-		- [ ] Specific detection
-		- [ ] Separator
+		- [x] Specific detection
+		- [x] Separator
 	- [ ] Table
 		- [x] Generalized detection
 		- [ ] Specific detection
