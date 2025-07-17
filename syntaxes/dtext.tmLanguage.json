@@ -9,11 +9,11 @@
 		"markup": {
 			"patterns": [
 				{
-					"name": "markup.inline.raw.string.markdown",
+					"name": "markup.inline.raw.string.dtext",
 					"match": "(`)[^`]*(`)",
 					"captures": {
-						"1" : { "name": "punctuation.definition.raw.markdown" },
-						"2" : { "name": "punctuation.definition.raw.markdown" }
+						"1" : { "name": "punctuation.definition.raw.dtext" },
+						"2" : { "name": "punctuation.definition.raw.dtext" }
 					}
 				},
 				{
@@ -155,7 +155,7 @@
 					"captures": {
 						"1": { "name": "" },
 						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
-						"3": { "name": "string.other.link.title.markdown" },
+						"3": { "name": "string.other.link.title.dtext" },
 						"4": { "name": "punctuation.definition.link.title.end.dtext" }
 					}
 				},
@@ -165,8 +165,8 @@
 					"captures": {
 						"1": { "name": "" },
 						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
-						"3": { "name": "markup.underline.link.markdown" },
-						"4": { "name": "string.other.link.title.markdown" },
+						"3": { "name": "markup.underline.link.dtext" },
+						"4": { "name": "string.other.link.title.dtext" },
 						"5": { "name": "punctuation.definition.link.title.end.dtext" }
 					}
 				},
@@ -174,13 +174,13 @@
 					"name": "meta.link.inline.dtext",
 					"match": "((\")([^\"]*)(\"))(:)(\\[[^\\]]*\\]|\\S*)",
 					"captures": {
-						"1": { "name": "string.other.link.title.markdown" },
+						"1": { "name": "string.other.link.title.dtext" },
 						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
 						"3": { "name": "" },
 						"4": { "name": "punctuation.definition.link.title.end.dtext" },
 						"5": { "name": "entity.name.link.start" },
 						"6": { "name": "" },
-						"7": { "name": "markup.underline.link.markdown" }
+						"7": { "name": "markup.underline.link.dtext" }
 					}
 				},
 				{
@@ -189,7 +189,7 @@
 					"captures": {
 						"1": { "name": "meta.link.tag-search.dtext" },
 						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
-						"3": { "name": "string.other.link.title.markdown" },
+						"3": { "name": "string.other.link.title.dtext" },
 						"4": { "name": "punctuation.definition.link.title.end.dtext" }
 					}
 				}
