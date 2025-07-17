@@ -9,7 +9,7 @@
 		"markup": {
 			"patterns": [
 				{
-					"name": "markup.inline.raw.string.dtext",
+					"name": "markup.inline.raw.code.dtext",
 					"match": "(`)[^`]*(`)",
 					"captures": {
 						"1" : { "name": "punctuation.definition.raw.dtext" },
@@ -17,20 +17,21 @@
 					}
 				},
 				{
+					"name": "meta.tag.markup.bold",
 					"contentName": "markup.bold.dtext",
 					"begin": "((\\[)(b)(\\]))",
 					"beginCaptures": {
 						"1": { "name": "entity.name.tag.start" },
-						"2": { "name": "punctuation.definition.bold.begin.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
 						"3": { "name": "entity.name.tag.name" },
-						"5": { "name": "punctuation.definition.bold.end.dtext" }
+						"5": { "name": "punctuation.definition.tag.end.dtext" }
 					},
 					"end": "((\\[/)(\\3)(\\]))",
 					"endCaptures": {
 						"1": { "name": "entity.name.tag.end" },
-						"2": { "name": "punctuation.definition.bold.begin.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
 						"3": { "name": "entity.name.tag.name" },
-						"5": { "name": "punctuation.definition.bold.end.dtext" }
+						"5": { "name": "punctuation.definition.tag.end.dtext" }
 					},
 					"patterns": [
 						{ "include": "#markup" },
@@ -38,20 +39,21 @@
 					]
 				},
 				{
+					"name": "meta.tag.markup.italic",
 					"contentName": "markup.italic.dtext",
 					"begin": "((\\[)(i)(\\]))",
 					"beginCaptures": {
 						"1": { "name": "entity.name.tag.start" },
-						"2": { "name": "punctuation.definition.italic.begin.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
 						"3": { "name": "entity.name.tag.name" },
-						"5": { "name": "punctuation.definition.italic.end.dtext" }
+						"5": { "name": "punctuation.definition.tag.end.dtext" }
 					},
 					"end": "((\\[/)(\\3)(\\]))",
 					"endCaptures": {
 						"1": { "name": "entity.name.tag.end" },
-						"2": { "name": "punctuation.definition.italic.begin.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
 						"3": { "name": "entity.name.tag.name" },
-						"5": { "name": "punctuation.definition.italic.end.dtext" }
+						"5": { "name": "punctuation.definition.tag.end.dtext" }
 					},
 					"patterns": [
 						{ "include": "#markup" },
@@ -59,20 +61,21 @@
 					]
 				},
 				{
+					"name": "meta.tag.markup.subscript",
 					"contentName": "markup.subscript.dtext",
 					"begin": "((\\[)(sub)(\\]))",
 					"beginCaptures": {
 						"1": { "name": "entity.name.tag.start" },
-						"2": { "name": "punctuation.definition.subscript.begin.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
 						"3": { "name": "entity.name.tag.name" },
-						"5": { "name": "punctuation.definition.subscript.end.dtext" }
+						"5": { "name": "punctuation.definition.tag.end.dtext" }
 					},
 					"end": "((\\[/)(\\3)(\\]))",
 					"endCaptures": {
 						"1": { "name": "entity.name.tag.end" },
-						"2": { "name": "punctuation.definition.subscript.begin.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
 						"3": { "name": "entity.name.tag.name" },
-						"5": { "name": "punctuation.definition.subscript.end.dtext" }
+						"5": { "name": "punctuation.definition.tag.end.dtext" }
 					},
 					"patterns": [
 						{ "include": "#markup" },
@@ -80,20 +83,21 @@
 					]
 				},
 				{
+					"name": "meta.tag.markup.superscript",
 					"contentName": "markup.superscript.dtext",
 					"begin": "((\\[)(sup)(\\]))",
 					"beginCaptures": {
 						"1": { "name": "entity.name.tag.start" },
-						"2": { "name": "punctuation.definition.superscript.begin.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
 						"3": { "name": "entity.name.tag.name" },
-						"5": { "name": "punctuation.definition.superscript.end.dtext" }
+						"5": { "name": "punctuation.definition.tag.end.dtext" }
 					},
 					"end": "((\\[/)(\\3)(\\]))",
 					"endCaptures": {
 						"1": { "name": "entity.name.tag.end" },
-						"2": { "name": "punctuation.definition.superscript.begin.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
 						"3": { "name": "entity.name.tag.name" },
-						"5": { "name": "punctuation.definition.superscript.end.dtext" }
+						"5": { "name": "punctuation.definition.tag.end.dtext" }
 					},
 					"patterns": [
 						{ "include": "#markup" },
@@ -101,20 +105,21 @@
 					]
 				},
 				{
+					"name": "meta.tag.markup.strikethrough",
 					"contentName": "markup.strikethrough.dtext",
 					"begin": "((\\[)(s)(\\]))",
 					"beginCaptures": {
 						"1": { "name": "entity.name.tag.start" },
-						"2": { "name": "punctuation.definition.strikethrough.begin.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
 						"3": { "name": "entity.name.tag.name" },
-						"5": { "name": "punctuation.definition.strikethrough.end.dtext" }
+						"5": { "name": "punctuation.definition.tag.end.dtext" }
 					},
 					"end": "((\\[/)(\\3)(\\]))",
 					"endCaptures": {
 						"1": { "name": "entity.name.tag.end" },
-						"2": { "name": "punctuation.definition.strikethrough.begin.dtext" },
+						"2": { "name": "punctuation.definition.tag.begin.dtext" },
 						"3": { "name": "entity.name.tag.name" },
-						"5": { "name": "punctuation.definition.strikethrough.end.dtext" }
+						"5": { "name": "punctuation.definition.tag.end.dtext" }
 					},
 					"patterns": [
 						{ "include": "#markup" },
@@ -184,12 +189,12 @@
 					}
 				},
 				{
-					"name": "meta.link.inline.dtext",
+					"name": "meta.link.inline.tag-search.dtext",
 					"match": "((\\{\\{)([^}]+)(\\}\\}))",
 					"captures": {
-						"1": { "name": "meta.link.tag-search.dtext" },
+						"1": { "name": "string.other.link.title.dtext" },
 						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
-						"3": { "name": "string.other.link.title.dtext" },
+						"3": { "name": "markup.underline.link.tag-search.dtext" },
 						"4": { "name": "punctuation.definition.link.title.end.dtext" }
 					}
 				}
