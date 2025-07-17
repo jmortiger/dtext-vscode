@@ -238,26 +238,29 @@
 				},
 				{
 					"name": "meta.link.inline.dtext",
-					"match": "((\\[\\[)([^\\]|]+)(?:\\|([^\\]]+))?(\\]))",
+					"match": "((\\[\\[)([^\\]|]+)(?:(\\|)([^\\]]+))?(\\]))",
 					"captures": {
 						"1": { "name": "" },
 						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
 						"3": { "name": "markup.underline.link.dtext" },
-						"4": { "name": "string.other.link.title.dtext" },
-						"5": { "name": "punctuation.definition.link.title.end.dtext" }
+						"4": { "name": "punctuation.separator.link-title.dtext" },
+						"5": { "name": "string.other.link.title.dtext" },
+						"6": { "name": "punctuation.definition.link.title.end.dtext" }
 					}
 				},
 				{
 					"name": "meta.link.inline.dtext",
-					"match": "((\")([^\"]*)(\"))(:)(\\[[^\\]]*\\]|\\S*)",
+					"match": "((\")([^\"]*)(\"))(:)(?:(\\[)([^\\]]*)(\\])|(\\S*))",
 					"captures": {
 						"1": { "name": "string.other.link.title.dtext" },
 						"2": { "name": "punctuation.definition.link.title.begin.dtext" },
 						"3": { "name": "" },
 						"4": { "name": "punctuation.definition.link.title.end.dtext" },
-						"5": { "name": "entity.name.link.start" },
-						"6": { "name": "" },
-						"7": { "name": "markup.underline.link.dtext" }
+						"5": { "name": "punctuation.separator.link-title.dtext" },
+						"6": { "name": "punctuation.definition.metadata.begin.dtext" },
+						"7": { "name": "markup.underline.link.dtext" },
+						"8": { "name": "punctuation.definition.metadata.end.dtext" },
+						"9": { "name": "markup.underline.link.dtext" }
 					}
 				},
 				{

@@ -18,10 +18,11 @@ A language extension for e621's DText markup language.
 	- [ ] Naked
 	- [ ] Angle-bracketed
 	- [x] Named
+		- [x] Separator
 		- [x] Square-bracketed
 	- [x] Internal
 		- [x] Named
-		- [ ] Separator
+		- [x] Separator
 	- [x] Tag search
 	- [ ] Post
 	- [ ] Post changes
