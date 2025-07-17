@@ -24,17 +24,18 @@ A language extension for e621's DText markup language.
 		- [x] Named
 		- [x] Separator
 	- [x] Tag search
-	- [ ] Post
-	- [ ] Post changes
-	- [ ] Forum Topic
-	- [ ] Comment
-	- [ ] Blip
-	- [ ] Pool
-	- [ ] Set
-	- [ ] Takedown
-	- [ ] Record
-	- [ ] Ticket
-	- [ ] Thumbnails
+	- [ ] Id-based
+		- [ ] Post
+		- [ ] Post changes
+		- [ ] Forum Topic
+		- [ ] Comment
+		- [ ] Blip
+		- [ ] Pool
+		- [ ] Set
+		- [ ] Takedown
+		- [ ] Record
+		- [ ] Ticket
+		- [ ] Thumbnails
 - [ ] Block Formatting
 	- [ ] Block Quote
 	- [ ] Code Block
@@ -63,7 +64,6 @@ A language extension for e621's DText markup language.
 		- [ ] tr
 			- [x] Generalized detection
 			- [ ] Specific detection
-			- [ ] Separ
 		- [ ] th
 			- [x] Generalized detection
 			- [ ] Specific detection
